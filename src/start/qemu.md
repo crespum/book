@@ -359,6 +359,9 @@ and RTT to print text.
 
 [defmt]: https://defmt.ferrous-systems.com/
 
+> **NOTE** `defmt` is a third-party dependency (i.e. non-core) widely used in the
+> Embedded Rust ecosystem.
+
 In order to read and decode the messages produced by `defmt` in the host, we need to
 switch the RTT transport output to semihosting. When using real hardware this requires
 a debug session but when using QEMU this Just Works.
